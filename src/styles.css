@@ -111,9 +111,29 @@ body {
 .form-btn:hover,
 .form-btn:focus {
   border-color: green;
+  color: green;
   background: rgb(243, 233, 188);
 }
 
 .is-hidden {
   display: none;
+}
+
+.load-more {
+  margin-bottom: 20px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid rgb(24, 198, 211);
+  border-color: rgb(167, 110, 40);
+  background: rgb(248, 242, 225);
+  outline: none;
+  padding: 0 20px;
+  margin: 80 15px 15px 0;
+}
+
+.load-more:hover {
+  border-color: green;
+  color: green;
+  background: rgb(243, 233, 188);
 }

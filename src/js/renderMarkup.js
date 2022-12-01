@@ -1,9 +1,9 @@
 const gallery = document.querySelector('.gallery');
 
-function renderMarkup(imagesArr) {
+function renderMarkup(hits) {
 
-    const markup = imagesArr.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) =>
-        `<div class="photo-card"><a class="gallery__link" href="${largeImageURL}">
+   const markup = hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
+     return `<div class="photo-card"><a class="gallery__link" href="${largeImageURL}">
   <img class="gallery__image" src="${webformatURL}" alt="${tags}" loading="lazy" /></a>
   <div class="info">
     <p class="info-item">
@@ -19,10 +19,9 @@ function renderMarkup(imagesArr) {
       <b>Downloads ${downloads}</b>
     </p>
   </div>
-</div>`
-    ).join('');
-    
-gallery.insertAdjacentHTML('beforeend', markup);    
-}
-
+</div>`}
+  ).join('');
+gallery.insertAdjacentHTML('beforeend', markup);
+    }
+        
 export default renderMarkup;
