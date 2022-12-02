@@ -28,6 +28,7 @@ body {
   list-style: none;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 80px;
 }
 
 .photo-card {
@@ -85,7 +86,8 @@ body {
 
 .form-input {
   padding-left: 10px;
-  height: 30px;
+  width: 240px;
+  height: 40px;
   border-radius: 10px 0 0 10px;
   border: 2px solid rgb(24, 198, 211);
   border-color: rgb(167, 110, 40);
@@ -99,7 +101,7 @@ body {
 }
 
 .form-btn {
-  height: 36px;
+  height: 46px;
   cursor: pointer;
   border-radius: 0 10px 10px 0;
   border: 2px solid rgb(24, 198, 211);
@@ -109,7 +111,7 @@ body {
 }
 
 .form-btn:hover,
-.form-btn:focus {
+.scroll-up:hover {
   border-color: green;
   color: green;
   background: rgb(243, 233, 188);
@@ -119,8 +121,10 @@ body {
   display: none;
 }
 
-.load-more {
-  margin-bottom: 20px;
+.load-more,
+.scroll-up {
+  font-size: 14px;
+  font-weight: 700;
   height: 36px;
   cursor: pointer;
   border-radius: 5px;
@@ -129,10 +133,10 @@ body {
   background: rgb(248, 242, 225);
   outline: none;
   padding: 0 20px;
-  margin: 80 15px 15px 0;
 }
 
-.load-more:hover {
+.load-more:hover,
+.scroll-up:hover {
   border-color: green;
   color: green;
   background: rgb(243, 233, 188);

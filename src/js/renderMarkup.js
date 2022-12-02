@@ -1,4 +1,4 @@
-const gallery = document.querySelector('.gallery');
+const galleryRef = document.querySelector('.gallery');
 
 function renderMarkup(hits) {
 
@@ -21,7 +21,7 @@ function renderMarkup(hits) {
   </div>
 </div>`}
   ).join('');
-gallery.insertAdjacentHTML('beforeend', markup);
+galleryRef.insertAdjacentHTML('beforeend', markup);
     }
         
 export default renderMarkup;
